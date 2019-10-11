@@ -2,5 +2,5 @@
 # frozen_string_literal: true
 
 Rails.application.configure do
-  config.cache_store = :redis_store, ENV.fetch('REDIS_URL')
+  config.cache_store = :cache_store, ENV.fetch('REDIS_URL')
 end
